@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#073b35">
+    <meta
+      name="description"
+      content="Encontre o destino correto para eletrônicos, pilhas e baterias. Descarte com segurança e ajude a manter materiais valiosos em circulação."
+    >
+    <title>Descarte Certo — eletrônicos, pilhas e baterias</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#inicio" aria-label="Descarte Certo, início">
+          <span class="brand-mark" aria-hidden="true">↻</span>
+          descarte<span class="brand-accent">certo</span>
+        </a>
+        <nav class="links" aria-label="Navegação principal">
+          <a href="#materiais">O que descartar</a>
+          <a href="#passos">Como fazer</a>
+          <a class="nav-cta" href="#encontre">Encontrar coleta ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Apresentação do projeto e chamada para encontrar um destino. -->
+      <section class="hero" id="inicio">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="eyebrow">Pequena atitude, grande ciclo</div>
+            <h1>Seu eletrônico merece um <em>novo destino.</em></h1>
+            <p class="intro">
+              Celulares, pilhas e baterias não vão para o lixo comum. Descubra
+              como separar esses materiais e encontre um ponto de coleta perto
+              de você.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#encontre">Quero descartar ↗</a>
+              <a class="text-link" href="#materiais">Veja o que pode ser reciclado ↓</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img
+              src="assets/images/ciclo-reciclagem.jpg"
+              alt="Ilustração de eletrônicos em um ciclo de reciclagem"
+            >
+            <div class="image-note">
+              Tecnologia em outro ciclo
+              <span>Descarte consciente começa com informação.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Busca simples: a consulta abre resultados no Google Maps. -->
+      <section class="finder" id="encontre">
+        <div class="wrap finder-grid">
+          <div>
+            <h2>Encontre um ponto de coleta</h2>
+            <p>Pesquise por cidade ou CEP e veja opções próximas no mapa.</p>
+          </div>
+          <form class="search" id="searchForm">
+            <label class="visually-hidden" for="location">Cidade ou CEP</label>
+            <input
+              id="location"
+              name="location"
+              type="search"
+              placeholder="Digite sua cidade ou CEP"
+              required
+            >
+            <button class="button" type="submit">Buscar pontos ↗</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Referências de busca e pontos conhecidos na Grande Florianópolis. -->
+      <section class="local" id="grande-florianopolis">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Informação da região</div>
+            <h2>Grande Florianópolis: comece por aqui.</h2>
+            <p>
+              Os pontos e regras variam por município. Consulte a base estadual
+              para filtrar a cidade e o tipo de resíduo antes de sair de casa.
+            </p>
+          </div>
+          <div class="local-grid">
+            <article class="local-card">
+              <h3>Mapa oficial de Santa Catarina</h3>
+              <p>
+                O IMA reúne locais de recebimento e permite buscar por município
+                e filtrar por eletroeletrônicos ou pilhas e baterias.
+              </p>
+              <a href="https://pld.ima.sc.gov.br/" target="_blank" rel="noopener noreferrer">
+                Abrir Penso, Logo Destino ↗
+              </a>
+            </article>
+            <article class="local-card">
+              <h3>Ecopontos de Florianópolis</h3>
+              <p>
+                A Prefeitura informa recebimento de até 3 eletrônicos, 2 volumes
+                de eletrodomésticos e 10 pilhas ou baterias. Itacorubi: Rod.
+                Admar Gonzaga, 72. Morro das Pedras: R. Francisco Vieira, 198.
+                Confira horários e condições antes de ir.
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Ecoponto+Itacorubi+Rodovia+Admar+Gonzaga+72+Florianopolis"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Ver Ecoponto Itacorubi no mapa ↗</a>
+              <a
+                class="secondary-map-link"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Ecoponto+Morro+das+Pedras+Rua+Francisco+Vieira+198+Florianopolis"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Ver Ecoponto Morro das Pedras no mapa ↗</a>
+            </article>
+          </div>
+          <p class="local-note">
+            Os Ecopontos municipais são destinados a moradores de Florianópolis.
+            Para São José, Palhoça, Biguaçu e demais municípios, use o mapa do
+            IMA e confirme o recebimento diretamente com o ponto escolhido.
+          </p>
+        </div>
+      </section>
+
+      <!-- Categorias de materiais que a página ajuda a encaminhar. -->
+      <section id="materiais">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Separar é o primeiro passo</div>
+            <h2>O que pode ganhar um novo destino?</h2>
+            <p>
+              Leve esses materiais a locais que recebem resíduos
+              eletroeletrônicos. A disponibilidade e as regras podem variar de
+              um ponto para outro.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">📱</div>
+              <h3>Eletrônicos</h3>
+              <p>Celulares, computadores, tablets, cabos, carregadores e pequenos aparelhos sem uso.</p>
+              <a href="#passos">Como preparar para entrega →</a>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🔋</div>
+              <h3>Pilhas</h3>
+              <p>Pilhas usadas de controles, brinquedos, relógios e outros equipamentos domésticos.</p>
+              <a href="#passos">Como guardar com segurança →</a>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">⚡</div>
+              <h3>Baterias</h3>
+              <p>Baterias de celulares, notebooks, ferramentas e outros dispositivos portáteis.</p>
+              <a href="#passos">Como entregar corretamente →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Orientações gerais para preparar os itens antes da entrega. -->
+      <section class="steps" id="passos">
+        <div class="wrap steps-grid">
+          <div class="steps-copy">
+            <div class="eyebrow">Sem complicação</div>
+            <h2>Antes de descartar, faça assim.</h2>
+            <p>
+              Um cuidado simples ajuda a proteger pessoas, evita danos no
+              transporte e facilita a triagem dos materiais.
+            </p>
+          </div>
+          <ol class="step-list">
+            <li class="step">
+              <span class="num">1</span>
+              <div><h3>Separe do lixo comum</h3><p>Guarde eletrônicos e baterias em local seco, longe do calor e do alcance de crianças.</p></div>
+            </li>
+            <li class="step">
+              <span class="num">2</span>
+              <div><h3>Proteja os terminais</h3><p>Se possível, cubra os polos de pilhas e baterias com fita não condutiva e evite contato com objetos metálicos.</p></div>
+            </li>
+            <li class="step">
+              <span class="num">3</span>
+              <div><h3>Confirme o que o ponto recebe</h3><p>Consulte o local antes de ir: alguns pontos aceitam apenas pilhas ou categorias específicas.</p></div>
+            </li>
+            <li class="step">
+              <span class="num">4</span>
+              <div><h3>Apague seus dados</h3><p>Faça backup e restaure celulares, tablets e computadores antes de entregar.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Fechamento e chamada para a busca de locais. -->
+      <section class="impact">
+        <div class="wrap impact-box">
+          <div>
+            <h2>O descarte certo mantém recursos em circulação.</h2>
+            <p>
+              Quando entregues em canais adequados, componentes podem ser triados
+              e encaminhados para reaproveitamento ou tratamento especializado.
+            </p>
+          </div>
+          <a class="button" href="#encontre">Encontre uma coleta ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>descartecerto</strong>
+          <p class="footnote">
+            Projeto estudantil de conscientização sobre descarte de eletrônicos,
+            pilhas e baterias. Os pontos exibidos na busca são resultados de
+            mapa; confirme as condições de recebimento diretamente com o local.
+          </p>
+        </div>
+        <div>
+          Informação para escolhas mais conscientes 🌱<br>
+          <span class="credit">
+            Desenvolvido por
+            <a href="https://mannesdesenvolvimentoweb.io" target="_blank" rel="noopener noreferrer">
+              mannesdesenvolvimentoweb.io
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+# Arquivos temporários do sistema operacional e editores.
+.DS_Store
+Thumbs.db
+.vscode/
