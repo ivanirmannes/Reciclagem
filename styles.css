@@ -240,7 +240,7 @@ section { padding: 78px 0; }
   color: var(--white);
   padding: 44px 48px;
 }
-.impact-box::after { content: "↗"; position: absolute; top: -56px; right: 27%; color: #ffffff0b; font-size: 180px; line-height: 1; transform: rotate(12deg); }
+.impact-box::after { content: "↗"; position: absolute; top: -56px; right: 27%; color: rgba(255, 255, 255, .08); font-size: 180px; line-height: 1; transform: rotate(12deg); pointer-events: none; }
 .impact h2 { position: relative; z-index: 1; max-width: 600px; margin: 0 0 12px; font: clamp(30px, 4vw, 44px)/1.06 var(--serif); }
 .impact p { position: relative; z-index: 1; max-width: 570px; margin: 0; color: #dce9dd; font-size: 14px; }
 .impact .button { position: relative; z-index: 1; white-space: nowrap; }
@@ -263,6 +263,7 @@ section { padding: 78px 0; }
   .card { min-height: 0; }
   .steps-grid { grid-template-columns: 1fr; gap: 28px; }
   .impact-box { grid-template-columns: 1fr; padding: 32px 27px; }
+  .impact-box::after { content: none; }
   .impact-box .button { justify-self: start; }
   .footer-grid { align-items: flex-start; flex-direction: column; }
 }
